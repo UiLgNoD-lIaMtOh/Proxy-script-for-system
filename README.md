@@ -14,12 +14,12 @@ sing-box virtual private network technology script adapted to various systems
 0.~~这个项目目前 10 代 CPU 会遇到 v3 版本不能使用的问题，需要手动下载 sing-box v1 的内核替换到 sources 文件夹里对应的位置，我的电脑是 7 代 CPU 用 v3 版本没有问题，我习惯优先方便自己使用，所以不打算修改代码逻辑，请原谅~~  
 1.这个项目主要是自己编写的科学上网小工具，依赖 sing-box 内核，依赖 bash curl nohup killall 等指令，方便自己学习新知识，主要是为了学习！！！不要想太多  
 2.为了实现 actions workflow 自动化 docker 构建运行，需要添加 `GITHUB_TOKEN` 环境变量，这个是访问 GitHub API 的令牌，可以在 GitHub 主页，点击个人头像，Settings -> Developer settings -> Personal access tokens -> Tokens (classic) -> Generate new token -> Generate new token (classic) ，设置名字为 GITHUB_TOKEN 接着要配置 环境变量有效时间，勾选环境变量作用域 repo write:packages workflow 和 admin:repo_hook 即可，最后点击Generate token，如图所示
-![image](https://github.com/user-attachments/assets/8f56f08d-ceee-49dd-98c9-7ba011cb54c5)
-![image](https://github.com/user-attachments/assets/f42a92e9-f2e6-4424-8196-9802ace4ac5e)
-![image](https://github.com/user-attachments/assets/e09dde46-c141-4782-a3c0-ead3939c4df2)
-![image](https://github.com/user-attachments/assets/21d2a910-a436-4ae2-972b-6fd05364f29d)  
+![image](assets/00.jpeg)
+![image](assets/01.jpeg)
+![image](assets/02.jpeg)
+![image](assets/03.jpeg)  
 3.赋予 actions[bot] 读/写仓库权限，在仓库中点击 Settings -> Actions -> General -> Workflow Permissions -> Read and write permissions -> save，如图所示
-![image](https://github.com/user-attachments/assets/2faa1a40-9891-4914-ace7-d5d23434b4bb)
+![image](assets/04.jpeg)
 
 4.转到 Actions -> update and uri 并且启动 workflow，实现自动化  
 5.新修改目录结构  
